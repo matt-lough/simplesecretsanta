@@ -56,13 +56,13 @@ class SecretSanta:
 		msg = 'Hi ' + name + '\r\nYour secret santa is ' + recipName + \
 			  '.\r\nGifts will be exchanged on the 22nd of December. ' + \
 			  (price_msg if USE_PRICE else '') + '\r\nHave fun!\r\n'
-		headers = ["From: " + "rawr.pybot@gmail.com",
+		headers = ["From: " + EMAIL_USER + '@gmail.com',
 				   "Subject: " + "Secret Santa!",
 				   "To: " + recipAddr,
 				   "MIME-Version: 1.0",
 				   "Content-Type: text/plain"]
 		headers = "\r\n".join(headers)
-		self.server.sendmail("rawr.pybbot@gmail.com", recipAddr, headers + "\r\n\r\n" + msg)
+		self.server.sendmail(EMAIL_USER + "@gmail.com", recipAddr, headers + "\r\n\r\n" + msg)
 		print "Email sent to " + recipAddr
 		
 	def chooseCandidate(self):
