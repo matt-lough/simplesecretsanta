@@ -1,0 +1,10 @@
+<emails>
+	<person>
+		<name>Tall man</name>
+		<email>tall_guy@example.com</email>
+	</person>
+	<person>
+		<name>Short guy</name>
+		<email>short_guy@example.com</email>
+	</person>
+</emails>
