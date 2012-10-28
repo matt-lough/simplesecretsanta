@@ -22,3 +22,8 @@ Provide either xml or json with names and addresses.
 Change the config at the top of the file to suit your needs.
 
 Run secretSanta.py in the directory of your file and you're done! 
+
+Other
+=====
+
+Currently only gmail is supported for the account which sends all the emails, I may expand on that later.
