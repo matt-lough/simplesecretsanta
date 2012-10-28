@@ -8,6 +8,7 @@
 # Last updated 29/10/2012
 ##
 # CONFIG
+# Edit below here
 ##
 USE_PRICE = 1
 # 1 = Max price will be in email
@@ -18,6 +19,9 @@ EMAIL_USER = 'santa_emailer'
 # The user part of your email address
 EMAIL_PASSWORD = 's3cr3t'
 # The emails password
+FILE_NAME = 'example.xml'
+##
+# All done! No need to touch the rest
 ##
 
 import random
@@ -97,7 +101,7 @@ class SecretSanta:
 		return ret_candidates
 		
 def run():
-	santa = SecretSanta('emails.xml')
+	santa = SecretSanta(FILE_NAME)
 	start = santa.chooseCandidate()
 	prev = start
 	start = [start, santa.candidatesAddr(start)]
